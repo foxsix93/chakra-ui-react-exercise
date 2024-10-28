@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { ChakraProvider, LightMode, extendTheme, defaultSystem } from "@chakra-ui/react";
+import { ChakraProvider, LightMode, extendTheme} from "@chakra-ui/react";
 
 const theme = extendTheme({
   config: {
@@ -13,7 +13,7 @@ const theme = extendTheme({
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ChakraProvider theme={theme} value={defaultSystem}>
+    <ChakraProvider theme={theme} >
       <LightMode>
         <App />
       </LightMode>
